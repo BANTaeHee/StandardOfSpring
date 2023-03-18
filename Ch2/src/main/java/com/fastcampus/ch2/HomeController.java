@@ -23,7 +23,7 @@ public class HomeController {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	
-	// 2. URL과 메서드 연결(맵핑, mapping)
+	// 2. URL과 메서드 연결(맵핑, mapping) - "/"를 입력하면 home이라는 메서드가 호출된다.
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
