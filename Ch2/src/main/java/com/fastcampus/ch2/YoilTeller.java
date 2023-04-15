@@ -34,7 +34,7 @@ public class YoilTeller {	// http://localhost:8080/ch2/getYoil?year=2021&month=1
 		char yoil = " 일월화수목금토".charAt(dayOfWeek);
 		
 		// 3.출력
-		response.setContentType("text.html");
+		response.setContentType("text/html");
 		response.setCharacterEncoding("utf-8");
 		PrintWriter out = response.getWriter();	// reponse객체에서 브라우저로의 출력 스트림을 얻는다.
 		out.println(year + "년 " + month + "월" + day + "일은 ");
